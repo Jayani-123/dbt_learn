@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: orders
+    description: Sample orders model
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        tests:
+          - not_null
+
+      - name: order_amount
+        description: Quantity multiplied by unit price
